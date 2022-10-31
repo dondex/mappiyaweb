@@ -22,7 +22,7 @@
               <div class="card-body">
                 <h3 class="card-title">Mappiya Community</h3>
                 <p>Come and join to our Mappiya Community and 24/7 Technical Support.</p>
-                <button class="btn-reg"><a href="">Contact Us</a></button>
+                <a class="btn-reg" href="{{ url('/create-article')}}">Contact Us</a>
               </div>
             </div>
           </div>

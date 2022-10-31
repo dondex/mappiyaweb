@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\HomeController;
 use App\Mail\ContactMe;
 use App\Models\Article;
@@ -31,9 +32,11 @@ Route::middleware([
 
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
-Route::get('/create', function () {
-    return view('article.create');
-});
+Route::get('/create-article', [ArticleController::class, 'create']);
+
+// Route::get('/create', function () {
+//     return view('article.create');
+// });
 
 
 
